@@ -41,6 +41,9 @@
         </div>
         <div class="header__picture">
           <picture>
+            <source type="image/webp" media="(max-width: 1199px)"
+              srcset="img/intro-image-tablet.webp 1x, img/intro-image-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/intro-image.webp 1x, img/intro-image@2x.webp 2x">
             <source media="(max-width: 1199px)"
               srcset="img/intro-image-tablet.png 1x, img/intro-image-tablet@2x.png 2x">
             <img src="img/intro-image.png" srcset="img/intro-image@2x.png 2x" alt="Фото Тренера" width="500"
@@ -51,6 +54,41 @@
     </header>
     <main>
       <section class="intro">
+        <div class="intro__content">
+          <h2>Тренажерный зал</h2>
+          <h3>Просторный зал площадью 900 кв/м</h3>
+          <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела
+            и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+          </p>
+          <span>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также
+            в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</span>
+        </div>
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)"
+            srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1199px)"
+            srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/gym.webp 1x, img/gym@2x.webp 2x">
+          <source media="(max-width: 767px)" srcset="img/gym-mobile.png 1x, img/gym-mobile@2x.png 2x">
+          <source media="(max-width: 1199px)" srcset="img/gym-tablet.png 1x, img/gym-tablet@2x.png 2x">
+          <img src="img/gym.png" srcset="img/gym@2x.png 2x" alt="Фото зала" width="660" height="401">
+        </picture>
+        <div class="intro__video">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/video.webp 1x, img/video@2x.webp 2x">
+            <source media="(max-width: 767px)" srcset="img/video-mobile.png 1x, img/video-mobile@2x.png 2x">
+            <source media="(max-width: 1199px)" srcset="img/video-tablet.png 1x, img/video-tablet@2x.png 2x">
+            <img class="intro__picture" src="img/video.png" srcset="img/video@2x.png 2x" alt="Превью Видео" width="364"
+              height="228">
+          </picture>
+          <button class="intro__play"></button>
+          <iframe class="intro__iframe" src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1" allow="autoplay"
+            width="364" height="228"></iframe>
+        </div>
       </section>
     </main>
     <footer>

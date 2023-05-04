@@ -1,13 +1,16 @@
 .header {
   min-height: 658px;
   background: conic-gradient(from 150.87deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  margin: 0 0 120px 0;
 
   @media (max-width: 1199px) {
     min-height: 554px;
+    margin: 0 0 101px 0;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     min-height: 491px;
+    margin: 0 0 63px 0;
   }
 }
 
