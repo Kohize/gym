@@ -4,7 +4,7 @@
 @import "vendor/normalize";
 @import "vendor/data-tabs";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -27,6 +27,8 @@
 @import "blocks/header";
 @import "blocks/intro";
 @import "blocks/subscription";
+@import "blocks/promo";
+@import "blocks/coach";
 
 // ---------------------------------
 

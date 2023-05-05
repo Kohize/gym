@@ -1,0 +1,142 @@
+.coach {
+  max-width: 1160px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.coach h2 {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  color: #102654;
+  margin: 0 0 49px 0;
+}
+
+.coach__slider-wrapper {
+  display: flex;
+  column-gap: 0.9%;
+}
+
+.coach__card {
+  position: relative;
+}
+
+.coach__card:hover .coach__card-image {
+  display: none;
+}
+
+.coach__card-image {
+  position: relative;
+}
+
+.coach__card-image {
+  width: 260px;
+}
+
+
+.coach__card-image h2 {
+  position: absolute;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+  bottom: -27px;
+  right: 107px;
+  letter-spacing: unset;
+}
+
+.coach__card-content {
+  position: absolute;
+  background: rgba(16, 38, 84, 0.89);
+  padding: 49px 46px 51px 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 19vw;
+  top: 0;
+  z-index: -1;
+}
+
+.coach__card-content h2 {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: unset;
+}
+
+.coach__card-content span {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #b6bdcc;
+  margin: 0 0 31px 0px;
+}
+
+.coach__card-list {
+  padding: 0 0 0 26px;
+  margin: 0;
+}
+
+.coach__card-item {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+
+  &:not(:last-child) {
+    margin: 0 0 13px 0;
+  }
+}
+
+.coach__next {
+  background-color: transparent;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 23px;
+    height: 23px;
+    border: 1px solid #afafaf;
+    border-top: none;
+    border-right: none;
+    transform: rotate(225deg);
+  }
+
+  &:hover:before {
+    scale: 1.1;
+  }
+}
+
+.coach__previous {
+  background-color: transparent;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 23px;
+    height: 23px;
+    border: 1px solid #afafaf;
+    border-top: none;
+    border-right: none;
+    transform: rotate(45deg);
+  }
+
+  &:hover:before {
+    scale: 1.1;
+  }
+}
