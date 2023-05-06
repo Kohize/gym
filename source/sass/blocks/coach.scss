@@ -1,15 +1,17 @@
 .coach {
   max-width: 1160px;
-  margin: 0 auto;
+  margin: 0 auto 236px;
   position: relative;
   width: calc(100% - 206px);
 
   @media (max-width: 1199px) {
-    width: calc(100% - 202px)
+    width: calc(100% - 202px);
+    margin: 0 auto 193px;
   }
 
   @media (max-width: 767px) {
-    width: calc(100% - 94px)
+    width: calc(100% - 94px);
+    margin: 0 auto 135px;
   }
 }
 
