@@ -226,6 +226,14 @@
   align-items: center;
   justify-content: center;
   color: var(--swiper-navigation-color, var(--swiper-theme-color));
+
+  @media (max-width: 1199px) {
+    top: 61%;
+  }
+
+  @media (max-width: 767px) {
+    top: 61.5%;
+  }
 }
 
 .swiper-button-prev.swiper-button-disabled,
@@ -250,6 +258,11 @@
 .swiper-rtl .swiper-button-next {
   left: -55px;
   right: auto;
+
+
+  @media (max-width: 767px) {
+    left: -36px;
+  }
 }
 
 .swiper-button-prev:after,
@@ -262,6 +275,15 @@
   right: -53px;
   top: 63.5%;
   left: auto;
+
+  @media (max-width: 1199px) {
+    top: 60.8%;
+  }
+
+  @media (max-width: 767px) {
+    right: -36px;
+    top: 61.5%;
+  }
 }
 
 .swiper-button-next:after,

@@ -9,11 +9,13 @@
     grid-template-columns: 38vw 1fr;
     max-width: unset;
     padding: 0 45px;
+    margin: 0 auto 101px;
   }
 
   @media (max-width: 767px) {
     grid-template-columns: 1fr;
     padding: 0 15px;
+    margin: 0 auto 62px;
   }
 }
 
