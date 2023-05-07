@@ -1,7 +1,7 @@
 .sale__wrapper {
   max-width: 1160px;
   width: calc(100% - 103px);
-  margin: 0 auto;
+  margin: 0 auto 117px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 3.2%;
@@ -9,11 +9,13 @@
   @media (max-width: 1199px) {
     grid-template-columns: 1fr;
     width: calc(100% - 90px);
+    margin: 0 auto 93px;
   }
 
   @media (max-width: 767px) {
     grid-template-columns: 1fr;
     width: calc(100% - 30px);
+    margin: 0 auto 65px;
   }
 }
 

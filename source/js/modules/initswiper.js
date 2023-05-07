@@ -1,9 +1,10 @@
+/* eslint-disable no-unused-vars */
 // import Swiper JS
 import Swiper from '../../js/vendor/swiper';
 
 
 // eslint-disable-next-line no-unused-vars
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.coach__slider', {
 
   // Optional parameters
   direction: 'horizontal',
@@ -32,5 +33,21 @@ const swiper = new Swiper('.swiper', {
       slidesPerGroup: 4,
       spaceBetween: 40,
     },
+  },
+});
+
+const review = new Swiper('.review__slider', {
+
+  // Optional parameters
+  direction: 'horizontal',
+  loop: false,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.review__next',
+    prevEl: '.review__previous',
+  },
+  maxBackfaceHiddenSlides: 0,
+  breakpoints: {
+    slidesPerView: 1,
   },
 });
