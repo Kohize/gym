@@ -126,6 +126,7 @@
   bottom: 0;
   right: 0;
   z-index: -1;
+  overflow-y: scroll;
 
   @media (max-width: 1199px) {
     padding: 53px 46px 49px 38px;
@@ -145,6 +146,7 @@
   color: #ffffff;
   margin: 0;
   letter-spacing: unset;
+  text-align: center;
 }
 
 .coach__card-content span {

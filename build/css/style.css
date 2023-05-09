@@ -3063,7 +3063,7 @@ button,
   content: attr(data-title);
   position: absolute;
   top: -26px;
-  right: 4px;
+  right: -60px;
   font-size: 100px;
   color: rgba(232, 232, 232, 0.48);
   z-index: -1;
@@ -3537,6 +3537,7 @@ button,
   bottom: 0;
   right: 0;
   z-index: -1;
+  overflow-y: scroll;
 }
 @media (max-width: 1199px) {
   .coach__card-content {
@@ -3558,6 +3559,7 @@ button,
   color: #ffffff;
   margin: 0;
   letter-spacing: unset;
+  text-align: center;
 }
 
 .coach__card-content span {
@@ -4707,13 +4709,9 @@ button,
 }
 @media (max-width: 1199px) {
   .review__next {
-    right: 125px;
-    top: 2px;
+    right: -23px;
+    top: 21px;
   }
-}
-.review__next::before {
-  right: -150px;
-  top: 20px;
 }
 @media (max-width: 767px) {
   .review__next {
@@ -4735,7 +4733,6 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  max-height: 337px;
 }
 @media (max-width: 1199px) {
   .contacts {
@@ -4985,6 +4982,21 @@ button,
   -webkit-column-gap: 23px;
      -moz-column-gap: 23px;
           column-gap: 23px;
+  position: relative;
+}
+.contacts__info-wrapper::before {
+  position: absolute;
+  content: "";
+  top: 7px;
+  right: 58.5%;
+  width: 1px;
+  height: 102px;
+  background-color: #74819c;
+}
+@media (max-width: 1250px) {
+  .contacts__info-wrapper::before {
+    right: 53.5%;
+  }
 }
 @media (max-width: 1199px) {
   .contacts__info-wrapper {
@@ -4992,12 +5004,20 @@ button,
        -moz-column-gap: 0;
             column-gap: 0;
   }
+  .contacts__info-wrapper::before {
+    top: 7px;
+    right: 57.5%;
+    height: 130px;
+  }
 }
 @media (max-width: 767px) {
   .contacts__info-wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     row-gap: 18px;
+  }
+  .contacts__info-wrapper::before {
+    display: none;
   }
 }
 
@@ -5025,18 +5045,6 @@ button,
   }
 }
 
-.contacts__content:first-child {
-  position: relative;
-}
-.contacts__content:first-child::before {
-  position: absolute;
-  content: "";
-  top: 7px;
-  right: 37px;
-  width: 1px;
-  height: 102px;
-  background-color: #74819c;
-}
 .contacts__content:nth-child(3n) {
   -ms-grid-column: 2;
   grid-column: 2;
@@ -5047,20 +5055,10 @@ button,
   grid-row: auto;
   grid-column: auto;
 }
-@media (max-width: 1199px) {
-  .contacts__content:first-child::before {
-    top: 7px;
-    right: 47px;
-    height: 130px;
-  }
-}
 @media (max-width: 767px) {
   .contacts__content:nth-child(3n) {
     grid-column: auto;
     grid-row: auto;
-  }
-  .contacts__content:first-child::before {
-    display: none;
   }
 }
 
