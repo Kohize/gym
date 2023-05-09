@@ -3,15 +3,21 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  max-height: 337px;
 
   @media (max-width: 1199px) {
     grid-template-columns: 1fr;
+    max-height: unset;
+  }
+
+  @media (max-width: 767px) {
+    margin: 0 auto 45px;
   }
 }
 
 .contacts__form {
   background-color: #102654;
-  padding: 55px 167px 0 102px;
+  padding: 55px 170px 0 102px;
 
   @media (max-width: 1199px) {
     min-height: 324px;
@@ -177,7 +183,7 @@
   padding: 56px 0 70px 123px;
 
   @media (max-width: 1199px) {
-    padding: 60px 7px 70px 133px;
+    padding: 60px 7px 63px 133px;
   }
 
   @media (max-width: 767px) {

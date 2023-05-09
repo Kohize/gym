@@ -86,11 +86,11 @@
               height="228">
           </picture>
           <button class="intro__play"></button>
-          <iframe class="intro__iframe" src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1" allow="autoplay"
-            width="364" height="228"></iframe>
+          <iframe class="intro__iframe" src="https://www.youtube.com/embed/9TZXsZItgdw" width="364"
+            height="228"></iframe>
         </div>
       </section>
-      <section class="subscription">
+      <section class="subscription" id="subscription">
         <h2>Абонементы</h2>
         <div class="subscription__type" data-tabs="parent">
           <div class="subscription__pagination" data-tabs="controls">
@@ -662,8 +662,63 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="container"></div>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__image-wrapper">
+          <a href="index.html" class="footer__logo">
+            <svg class="footer__image" width="88" height="32">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="index.html">
+              <svg width="88" height="32">
+                <use xlink:href="img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Услуги</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Абонементы</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Акции</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Тренеры</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Расписание</a>
+          </li>
+        </ul>
+        <ul class="footer__socials">
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link">
+              <svg class="footer__social-image" width="25" height="25">
+                <use xlink:href="img/sprite.svg#vk-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link">
+              <svg class="footer__social-image" width="25" height="25">
+                <use xlink:href="img/sprite.svg#ok-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link">
+              <svg class="footer__social-image" width="25" height="25">
+                <use xlink:href="img/sprite.svg#reddit-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </div>
 
