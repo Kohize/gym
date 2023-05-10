@@ -43,7 +43,6 @@
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
   row-gap: 4px;
 
   @media (max-width: 1199px) {
@@ -178,7 +177,7 @@
 
 .contacts__info {
   border-top: 1px solid #74819c;
-  padding: 56px 0 70px 123px;
+  padding: 56px 0 63px 123px;
 
   @media (max-width: 1199px) {
     padding: 60px 7px 63px 133px;

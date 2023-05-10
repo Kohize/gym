@@ -85,7 +85,7 @@
             <img class="intro__picture" src="img/video.png" srcset="img/video@2x.png 2x" alt="Превью Видео" width="364"
               height="228">
           </picture>
-          <button class="intro__play"></button>
+          <button class="intro__play" aria-label="Открыть видео"></button>
           <iframe class="intro__iframe" src="https://www.youtube.com/embed/9TZXsZItgdw" width="364"
             height="228"></iframe>
         </div>
@@ -557,7 +557,7 @@
               <p>Приведи друга, получи абонемент в подарок</p>
               <a href="#">подробнее</a>
             </div>
-            <div class="sale__content sales__content--fitness">
+            <div class="sale__content sale__content--fitness">
               <h3>Скидка 20%</h3>
               <p>Корпоративный фитнес с&nbsp;командой</p>
               <a href="#">подробнее</a>
@@ -629,7 +629,7 @@
               <div class="contacts__input contacts__input--phone" data-validate-type="phone" data-required
                 data-message-base="Поле обязательно к заполнению">
                 <label for="phone"></label>
-                <input type="phone" id="phone" name="phone" placeholder="Телефон">
+                <input type="tel" id="phone" name="phone" placeholder="Телефон">
               </div>
               <div class="contacts__button">
                 <button type="submit">Отправить</button>

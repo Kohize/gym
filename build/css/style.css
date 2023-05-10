@@ -2197,7 +2197,7 @@ button,
 
 .header {
   min-height: 658px;
-  background: conic-gradient(from 150.87deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  background: conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   margin: 0 0 120px 0;
 }
 @media (max-width: 1199px) {
@@ -2272,7 +2272,7 @@ button,
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 10px 0 0 0;
 }
 .header__phone:hover, .header__phone:focus {
@@ -2321,7 +2321,6 @@ button,
 }
 
 .header__list {
-  padding: 0;
   margin: 0;
   list-style: none;
   text-align: end;
@@ -2345,7 +2344,7 @@ button,
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .header__title {
@@ -2380,7 +2379,7 @@ button,
   font-size: 48px;
   line-height: 58px;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 0 85px 0 0;
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
@@ -2412,7 +2411,7 @@ button,
   line-height: 110px;
   text-align: right;
   letter-spacing: 0.05em;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0 0 47px 0;
   max-width: 298px;
   text-transform: uppercase;
@@ -2450,8 +2449,8 @@ button,
           align-items: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #FFFFFF;
-  border: 4px solid #FFFFFF;
+  color: #ffffff;
+  border: 4px solid #ffffff;
 }
 .header__button:hover, .header__button:focus {
   color: #102654;
@@ -2704,7 +2703,7 @@ button,
   border: 0;
   background: transparent;
 }
-.intro__play:hover:before {
+.intro__play:hover::before {
   scale: 1.05;
 }
 .intro__play::before {
@@ -2827,9 +2826,6 @@ button,
   position: relative;
   display: -ms-grid;
   display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-grid-columns: (-webkit-min-content)[3];
   -ms-grid-columns: (min-content)[3];
   grid-template-columns: repeat(3, -webkit-min-content);
@@ -2881,6 +2877,9 @@ button,
   line-height: 150%;
   color: rgba(16, 38, 84, 0.5);
   cursor: pointer;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 @media (max-width: 1199px) {
   .subscription__button {
@@ -2897,7 +2896,6 @@ button,
 }
 
 .subscription__list {
-  margin: 0;
   padding: 0;
   list-style: none;
   display: -ms-grid;
@@ -2948,7 +2946,7 @@ button,
   }
 }
 
-.subscription__item:hover:before {
+.subscription__item:hover::before {
   content: "";
   top: 0;
   right: 0;
@@ -2956,8 +2954,8 @@ button,
   bottom: 0;
   position: absolute;
   border: 7px solid transparent;
-  -o-border-image: -o-linear-gradient(301.18deg, #D10A42 0.85%, #00359F 100%);
-     border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+  -o-border-image: -o-linear-gradient(301.18deg, #d10a42 0.85%, #00359f 100%);
+     border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 1;
   pointer-events: none;
 }
@@ -2991,7 +2989,7 @@ button,
   font-size: 16px;
   line-height: 150%;
   text-align: center;
-  color: #495A7D;
+  color: #495a7d;
   margin: 0 0 65px;
 }
 @media (max-width: 767px) {
@@ -3014,9 +3012,9 @@ button,
   text-align: center;
 }
 .subscription__buy:hover {
-  background: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
-  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-  color: #FFFFFF;
+  background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  color: #ffffff;
 }
 
 .subscription__price {
@@ -3054,7 +3052,7 @@ button,
   font-weight: 700;
   font-size: 60px;
   line-height: 150%;
-  color: #103AAE;
+  color: #103aae;
   margin: 0 15px 0 0;
   z-index: 1;
   position: relative;
@@ -3094,15 +3092,20 @@ button,
 }
 @media (max-width: 1199px) {
   .subscription__background {
-    bottom: -208px;
-    width: 429px;
-    right: 153px;
+    bottom: -166px;
+    width: 341px;
+    right: 0px;
   }
 }
 @media (max-width: 767px) {
   .subscription__background {
     display: none;
   }
+}
+
+.subscription__background img {
+  width: 100%;
+  height: auto;
 }
 
 .promo {
@@ -3569,7 +3572,7 @@ button,
   font-size: 16px;
   line-height: 150%;
   color: #b6bdcc;
-  margin: 0 0 31px 0px;
+  margin: 0 0 31px 0;
 }
 
 .coach__card-list {
@@ -3615,7 +3618,7 @@ button,
       -ms-transform: rotate(225deg);
           transform: rotate(225deg);
 }
-.coach__next:hover:before {
+.coach__next:hover::before {
   scale: 1.1;
 }
 @media (max-width: 767px) {
@@ -3641,7 +3644,7 @@ button,
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
-.coach__previous:hover:before {
+.coach__previous:hover::before {
   scale: 1.1;
 }
 @media (max-width: 767px) {
@@ -3700,7 +3703,6 @@ button,
 }
 
 .benefits__list {
-  margin: 0;
   padding: 0;
   list-style: none;
   max-width: 1040px;
@@ -3842,7 +3844,7 @@ button,
   display: flex;
 }
 .benefits__item:not(:first-child) {
-  padding: 0 0 0px 20px;
+  padding: 0 0 0 20px;
 }
 .benefits__item:nth-child(n+2) {
   -ms-grid-column: 1;
@@ -3953,7 +3955,7 @@ button,
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0px 0 24px 0;
+    margin: 0 0 24px 0;
   }
   .benefits__item:not(:first-child) {
     padding: 0;
@@ -4025,11 +4027,11 @@ button,
   font-weight: 700;
   font-size: 71px;
   line-height: 150%;
-  background: -o-linear-gradient(322.39deg, #D10A42 0%, #0041CA 45.58%);
-  background: linear-gradient(127.61deg, #D10A42 0%, #0041CA 45.58%);
-  -webkit-background-clip: text;
+  background: -o-linear-gradient(322.39deg, #d10a42 0%, #0041ca 45.58%);
+  background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
   -webkit-text-fill-color: transparent;
-  background-clip: text;
+  -webkit-background-clip: text;
+          background-clip: text;
   max-height: 82px;
 }
 @media (max-width: 1199px) {
@@ -4191,7 +4193,7 @@ button,
 }
 @media (max-width: 1199px) {
   .sale__subscription {
-    margin: 0 0 30px 0px;
+    margin: 0 0 30px 0;
   }
 }
 @media (max-width: 767px) {
@@ -4297,6 +4299,7 @@ button,
 
 .sale__subscription-image img {
   height: 100%;
+  max-height: 462px;
 }
 @media (max-width: 1199px) {
   .sale__subscription-image img {
@@ -4306,6 +4309,7 @@ button,
 @media (max-width: 767px) {
   .sale__subscription-image img {
     min-width: unset;
+    max-height: unset;
     width: 100%;
   }
 }
@@ -4329,6 +4333,11 @@ button,
     -webkit-column-gap: 30px;
        -moz-column-gap: 30px;
             column-gap: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media (max-width: 767px) {
@@ -4346,7 +4355,7 @@ button,
   padding: 25px 0 33px 36px;
   min-height: 210px;
 }
-.sale__content:before {
+.sale__content::before {
   position: absolute;
   content: "";
   top: 0;
@@ -4354,14 +4363,14 @@ button,
   left: 0;
   bottom: 0;
   border: 7px solid transparent;
-  -o-border-image: -o-linear-gradient(301.18deg, #D10A42 0.85%, #00359F 100%);
-     border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+  -o-border-image: -o-linear-gradient(301.18deg, #d10a42 0.85%, #00359f 100%);
+     border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 1;
   pointer-events: none;
 }
 @media (max-width: 1199px) {
   .sale__content {
-    min-width: 324px;
+    max-width: 42vw;
     padding: 25px 45px 11px 35px;
     width: 100%;
   }
@@ -4434,12 +4443,12 @@ button,
 }
 
 @media (max-width: 1199px) {
-  .sales__content--fitness p {
+  .sale__content--fitness p {
     margin: 0 0 66px;
   }
 }
 @media (max-width: 767px) {
-  .sales__content--fitness p {
+  .sale__content--fitness p {
     margin: 0 0 21px;
   }
 }
@@ -4525,8 +4534,8 @@ button,
   max-width: 560px;
   min-height: 242px;
   background-color: #1c3374;
-  -webkit-box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
-          box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
+  -webkit-box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+          box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4542,7 +4551,6 @@ button,
   .review__card {
     max-width: 226px;
     min-height: 335px;
-    padding: 40px 25px;
     padding: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4658,12 +4666,12 @@ button,
   top: 0;
   right: 0;
 }
-.review__previous:hover:before {
+.review__previous:hover::before {
   scale: 1.1;
 }
 @media (max-width: 1199px) {
   .review__previous {
-    top: 0px;
+    top: 0;
     left: -131px;
   }
   .review__previous::before {
@@ -4704,7 +4712,7 @@ button,
   top: 0;
   right: 0;
 }
-.review__next:hover:before {
+.review__next:hover::before {
   scale: 1.1;
 }
 @media (max-width: 1199px) {
@@ -4782,7 +4790,6 @@ button,
   grid-template-rows: repeat(2, 1fr);
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
   row-gap: 4px;
 }
 @media (max-width: 1199px) {
@@ -4837,7 +4844,7 @@ button,
 }
 
 .contacts__input--name {
-  margin: 0px 29px 0 0;
+  margin: 0 29px 0 0;
 }
 @media (max-width: 1199px) {
   .contacts__input--name {
@@ -4924,7 +4931,6 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
-  border: 0;
   width: 410px;
   height: 52px;
   border: 3px solid #ffffff;
@@ -4949,7 +4955,7 @@ button,
 
 .contacts__info {
   border-top: 1px solid #74819c;
-  padding: 56px 0 70px 123px;
+  padding: 56px 0 63px 123px;
 }
 @media (max-width: 1199px) {
   .contacts__info {
@@ -5211,9 +5217,6 @@ button,
 }
 @media (max-width: 767px) {
   .footer__list {
-    -webkit-column-gap: 30px;
-       -moz-column-gap: 30px;
-            column-gap: 30px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
@@ -5283,7 +5286,7 @@ button,
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .footer__link:hover, .footer__link:focus {
   opacity: 0.7;

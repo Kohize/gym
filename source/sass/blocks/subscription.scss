@@ -55,7 +55,6 @@
 .subscription__pagination {
   position: relative;
   display: grid;
-  align-items: center;
   grid-template-columns: repeat(3, min-content);
   margin: 0 auto 45px;
   width: 354px;
@@ -98,6 +97,7 @@
   line-height: 150%;
   color: rgba(16, 38, 84, 0.5);
   cursor: pointer;
+  align-self: center;
 
   @media (max-width: 1199px) {
     font-size: 18px;
@@ -282,9 +282,9 @@
   right: 0;
 
   @media (max-width: 1199px) {
-    bottom: -208px;
-    width: 429px;
-    right: 153px;
+    bottom: -166px;
+    width: 341px;
+    right: 0;
   }
 
   @media (max-width: 767px) {
