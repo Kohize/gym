@@ -3541,6 +3541,8 @@ button,
   right: 0;
   z-index: -1;
   overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 @media (max-width: 1199px) {
   .coach__card-content {
@@ -3551,6 +3553,10 @@ button,
   .coach__card-content {
     padding: 40px 34px 49px 32px;
   }
+}
+
+.coach__card-content::-webkit-scrollbar {
+  display: none;
 }
 
 .coach__card-content h2 {
