@@ -112,7 +112,6 @@
 }
 
 .subscription__list {
-  margin: 0;
   padding: 0;
   list-style: none;
   display: grid;
@@ -148,7 +147,7 @@
   }
 }
 
-.subscription__item:hover:before {
+.subscription__item:hover::before {
   content: "";
   top: 0;
   right: 0;
@@ -156,7 +155,7 @@
   bottom: 0;
   position: absolute;
   border: 7px solid transparent;
-  border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+  border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 1;
   pointer-events: none;
 }
@@ -188,7 +187,7 @@
   font-size: 16px;
   line-height: 150%;
   text-align: center;
-  color: #495A7D;
+  color: #495a7d;
   margin: 0 0 65px;
 
   @media (max-width: 767px) {
@@ -210,8 +209,8 @@
   text-align: center;
 
   &:hover {
-    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-    color: #FFFFFF;
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    color: #ffffff;
   }
 }
 
@@ -242,7 +241,7 @@
   font-weight: 700;
   font-size: 60px;
   line-height: 150%;
-  color: #103AAE;
+  color: #103aae;
   margin: 0 15px 0 0;
   z-index: 1;
   position: relative;

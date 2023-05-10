@@ -156,7 +156,7 @@
   font-size: 16px;
   line-height: 150%;
   color: #b6bdcc;
-  margin: 0 0 31px 0px;
+  margin: 0 0 31px 0;
 }
 
 .coach__card-list {
@@ -190,7 +190,7 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     display: block;
     width: 23px;
     height: 23px;
@@ -200,7 +200,7 @@
     transform: rotate(225deg);
   }
 
-  &:hover:before {
+  &:hover::before {
     scale: 1.1;
   }
 
@@ -217,7 +217,7 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     display: block;
     width: 23px;
     height: 23px;
@@ -227,7 +227,7 @@
     transform: rotate(45deg);
   }
 
-  &:hover:before {
+  &:hover::before {
     scale: 1.1;
   }
 

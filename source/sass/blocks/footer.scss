@@ -75,7 +75,6 @@
   }
 
   @media (max-width: 767px) {
-    column-gap: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 0 0 15px;
@@ -140,7 +139,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
 
   &:hover,
   &:focus {

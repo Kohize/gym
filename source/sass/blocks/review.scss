@@ -10,7 +10,7 @@
     margin: 0 0 70px;
   }
 
-  @media (min-width: 321px) and (max-width:767px) {
+  @media (min-width: 321px) and (max-width: 767px) {
     padding: 0 45px;
   }
 }
@@ -33,7 +33,7 @@
     max-width: 226px;
   }
 
-  @media (min-width: 321px) and (max-width:767px) {
+  @media (min-width: 321px) and (max-width: 767px) {
     max-width: unset;
   }
 }
@@ -65,7 +65,7 @@
   max-width: 560px;
   min-height: 242px;
   background-color: #1c3374;
-  box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
+  box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
   display: flex;
   padding: 55px 62px 55px 62px;
 
@@ -78,15 +78,14 @@
     max-width: 226px;
     min-height: 335px;
     padding: 40px 25px;
-    padding: 0;
     flex-direction: column;
     align-items: center;
   }
 
-  @media (min-width: 321px) and (max-width:767px) {
+  @media (min-width: 321px) and (max-width: 767px) {
     max-width: unset;
     min-height: 100%;
-    padding: 25px
+    padding: 25px;
   }
 }
 
@@ -112,7 +111,7 @@
     position: relative;
   }
 
-  @media (min-width: 321px) and (max-width:767px) {
+  @media (min-width: 321px) and (max-width: 767px) {
     padding: 0 10px;
   }
 }
@@ -134,7 +133,7 @@
     left: 100px;
   }
 
-  @media (min-width: 321px) and (max-width:767px) {
+  @media (min-width: 321px) and (max-width: 767px) {
     left: 120px;
   }
 }
@@ -154,7 +153,7 @@
     max-width: 180px;
   }
 
-  @media (min-width: 321px) and (max-width:767px) {
+  @media (min-width: 321px) and (max-width: 767px) {
     max-width: unset;
   }
 }
@@ -166,7 +165,7 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     display: block;
     width: 23px;
     height: 23px;
@@ -176,15 +175,14 @@
     transform: rotate(45deg);
     top: 0;
     right: 0;
-
   }
 
-  &:hover:before {
+  &:hover::before {
     scale: 1.1;
   }
 
   @media (max-width: 1199px) {
-    top: 0px;
+    top: 0;
     left: -131px;
 
     &::before {
@@ -213,7 +211,7 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     display: block;
     width: 23px;
     height: 23px;
@@ -225,7 +223,7 @@
     right: 0;
   }
 
-  &:hover:before {
+  &:hover::before {
     scale: 1.1;
   }
 

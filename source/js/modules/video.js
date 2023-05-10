@@ -23,4 +23,3 @@ if (videoPreview && videoPicture && videoIframe && videoButton) {
     videoIframe.setAttribute('src', videoIframe.getAttribute('src') + '?autoplay=1');
   });
 }
-

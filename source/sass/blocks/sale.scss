@@ -47,7 +47,7 @@
   display: flex;
 
   @media (max-width: 1199px) {
-    margin: 0 0 30px 0px;
+    margin: 0 0 30px 0;
   }
 
   @media (max-width: 767px) {
@@ -172,7 +172,7 @@
   padding: 25px 0 33px 36px;
   min-height: 210px;
 
-  &:before {
+  &::before {
     position: absolute;
     content: "";
     top: 0;
@@ -180,7 +180,7 @@
     left: 0;
     bottom: 0;
     border: 7px solid transparent;
-    border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+    border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
     border-image-slice: 1;
     pointer-events: none;
   }
@@ -258,7 +258,7 @@
   }
 }
 
-.sales__content--fitness p {
+.sale__content--fitness p {
   @media (max-width: 1199px) {
     margin: 0 0 66px;
   }

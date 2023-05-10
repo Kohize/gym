@@ -168,7 +168,7 @@
   border: 0;
   background: transparent;
 
-  &:hover:before {
+  &:hover::before {
     scale: 1.05;
   }
 
