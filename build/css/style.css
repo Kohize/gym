@@ -3094,7 +3094,7 @@ button,
   .subscription__background {
     bottom: -166px;
     width: 341px;
-    right: 0px;
+    right: 0;
   }
 }
 @media (max-width: 767px) {
@@ -4381,6 +4381,7 @@ button,
 @media (max-width: 767px) {
   .sale__content {
     min-width: unset;
+    max-width: unset;
     padding: 36px 48px 0 50px;
     text-align: center;
   }
