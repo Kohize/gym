@@ -2761,8 +2761,8 @@ button,
 }
 @media (max-width: 1199px) {
   .intro__video iframe {
-    width: 266px;
-    height: 167px;
+    width: 34.5vw;
+    height: 24vw;
   }
 }
 @media (max-width: 767px) {
