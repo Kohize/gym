@@ -4201,7 +4201,7 @@ button,
 .sale__wrapper {
   max-width: 1160px;
   width: calc(100% - 103px);
-  margin: 0 auto 117px;
+  margin: 0 auto 115px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
