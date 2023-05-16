@@ -48,6 +48,10 @@
 }
 
 .footer__image {
+  &:hover {
+    opacity: 0.7;
+  }
+
   @media (max-width: 1199px) {
     width: 82px;
     height: 18px;
